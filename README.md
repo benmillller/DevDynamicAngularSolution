@@ -1,9 +1,9 @@
 DevDynamicAngularSolution
 =========================
 ## Description
-Extend angular in such a way that allow extending the module on the fly ie
-it allow to add new service,directives,filters etc to a module that already been bootstrap , and rebind the module to the same dom tree.
-in addition it add utility function that load html and scripts (usually with extra module elements) into the page. by using this extension to angular you can deferred loading parts of your application to future time.
+DevDynamicAngularSolution is an Extension to angularJS that allows extending angular modules on the fly. ie
+it allows adding new services, directives, filters etc to a module that has already been bootstraped, and rebinds the module to the same DOM tree.
+In addition, it adds utility functions that load html and scripts (usually with extra module elements) into the page. by using this angular extension you can defer loading parts of your application to future time.
 
 ## Installation :
 ```html
