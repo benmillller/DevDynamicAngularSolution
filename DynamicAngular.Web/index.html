@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/lib/jquery.js"></script>
+    <script src="Scripts/lib/angular.js"></script>
+    <script src="Scripts/lib/dynamicAngularJs.js"></script>
+    <script type="text/javascript">
+        angular.module('app1').controller('lmactrl', function ($scope) {
+            $scope.lma = 'aaa';
+        });
+
+        $(function () {
+            angular.bootstrap($('#div2').get(0), ['app1']);
+
+            angular.load({
+                container: '#div3', url: 'view/view1.html', scripts: ['app/script1.js'], modules: ['app1']
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">
+            <div data-ng-controller="lmactrl">
+                <h1>lmadd</h1>
+                {{lma}}
+            </div>
+        </div>
+
+        <div id="div3">
+            
+        </div>
+
+    </div>
+</body>
+</html>
